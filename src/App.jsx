@@ -297,7 +297,7 @@ ${form.message}
         </div>
       </section>
 
-      <section className="section section-soft" id="galeri">
+        <section className="section section-soft" id="galeri">
         <div className="container">
           <div className="section-head">
             <div>
@@ -323,36 +323,18 @@ ${form.message}
 
           <div className="gallery-shell">
             <div className="gallery-stage">
-    <img src={gallery[galleryIndex]} />
-  </div>
-
-  <div className="gallery-thumbs">
-
-    {gallery.map((img, i) => (
-      <img
-        key={i}
-        src={img}
-        className={galleryIndex === i ? "active" : ""}
-        onClick={() => setGalleryIndex(i)}
-      />
-    ))}
-
-  </div>
+              <img src={gallery[galleryIndex]} alt={`${galleryTab} görseli`} />
             </div>
 
-            <div className="gallery-side">
+            <div className="gallery-thumbs">
               {gallery.map((img, i) => (
-                <button
+                <img
                   key={`${img}-${i}`}
-                  className={`thumb-card ${galleryIndex === i ? "active" : ""}`}
+                  src={img}
+                  alt={`${galleryTab} küçük görsel`}
+                  className={galleryIndex === i ? "active" : ""}
                   onClick={() => setGalleryIndex(i)}
-                >
-                  <img src={img} alt={`${galleryTab} küçük görsel`} />
-                  <div>
-                    <strong>{galleryTab}</strong>
-                    <span>Seçili görsel</span>
-                  </div>
-                </button>
+                />
               ))}
             </div>
           </div>
