@@ -175,11 +175,31 @@ ${form.message}
 
       <section className="hero">
         <div className="hero-media">
-          <video autoPlay muted loop playsInline poster={SITE.heroPoster}>
-            <source src={SITE.heroVideo} type="video/mp4" />
-          </video>
-          <div className="hero-overlay" />
-        </div>
+  <video
+    ref={videoRef}
+    autoPlay
+    muted={isMuted}
+    loop
+    playsInline
+    poster={SITE.heroPoster}
+  >
+    <source src={SITE.heroVideo} type="video/mp4" />
+  </video>
+  <div className="hero-overlay" />
+
+  <button
+    type="button"
+    className="sound-toggle"
+    onClick={() => {
+      if (!videoRef.current) return;
+      const nextMuted = !isMuted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+    }}
+  >
+    {isMuted ? "🔊 Sesi Aç" : "🔇 Sesi Kapat"}
+  </button>
+</div>
 
         <div className="container hero-shell">
           <div className="topbar">
