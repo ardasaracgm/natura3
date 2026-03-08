@@ -168,6 +168,25 @@ p{color:var(--muted);line-height:1.8}
   font-size:12px;
   opacity:.9;
 }
+@media (max-width:768px){
+
+  .floating-wa{
+    padding:10px 14px;
+    right:14px;
+    bottom:90px;
+  }
+
+  .wa-text strong{
+    font-size:12px;
+  }
+
+  .wa-text small{
+    font-size:11px;
+  }
+
+}
+
+
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.70);display:flex;align-items:center;justify-content:center;padding:18px;z-index:1200}
 .premium-modal{width:min(1080px,100%);background:#fff;border-radius:32px;padding:24px}
 .modal-top{display:flex;justify-content:space-between;align-items:start;gap:20px}
