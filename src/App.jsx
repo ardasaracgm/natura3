@@ -323,7 +323,21 @@ ${form.message}
 
           <div className="gallery-shell">
             <div className="gallery-stage">
-              <img src={gallery[galleryIndex]} alt={`${galleryTab} görseli`} />
+    <img src={gallery[galleryIndex]} />
+  </div>
+
+  <div className="gallery-thumbs">
+
+    {gallery.map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        className={galleryIndex === i ? "active" : ""}
+        onClick={() => setGalleryIndex(i)}
+      />
+    ))}
+
+  </div>
             </div>
 
             <div className="gallery-side">
