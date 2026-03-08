@@ -153,19 +153,20 @@ p{color:var(--muted);line-height:1.8}
 }
 .sound-toggle{
   position:absolute;
-  right:24px;
-  bottom:24px;
-  z-index:3;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:12px 16px;
+  top:20px;
+  right:20px;
+  z-index:20;
+
+  padding:10px 14px;
   border-radius:999px;
+
   border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.12);
+  background:rgba(255,255,255,.15);
   color:#fff;
+
   backdrop-filter:blur(10px);
   font-weight:700;
+  font-size:14px;
 }
 
 .mobile-bottom-bar{
