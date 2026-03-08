@@ -549,6 +549,18 @@ ${form.message}
         </div>
       </section>
 
+      <div className="mobile-bottom-bar">
+  <a href={whatsappHref} target="_blank" rel="noreferrer">
+    WhatsApp
+  </a>
+  <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>
+    Ara
+  </a>
+  <a href="#iletisim">
+    Bilgi Al
+  </a>
+</div>
+      
       <footer className="footer-premium">
         <div className="container footer-shell">
           <div>
