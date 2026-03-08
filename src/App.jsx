@@ -111,6 +111,8 @@ function useGallery(tab) {
 
 export default function App() {
   const [galleryTab, setGalleryTab] = useState("Dış Mekan");
+  const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [planModal, setPlanModal] = useState({ open: false, title: "", image: "" });
   const [selectedType, setSelectedType] = useState("Tümü");
