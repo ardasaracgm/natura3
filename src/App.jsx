@@ -169,10 +169,19 @@ ${form.message}
 
   return (
     <div className="page">
-      <a className="floating-wa" href={whatsappHref} target="_blank" rel="noreferrer">
-        WhatsApp Bilgi Al
-      </a>
+      <a
+  className="floating-wa"
+  href={whatsappHref}
+  target="_blank"
+  rel="noreferrer"
+>
+  <span className="wa-icon">💬</span>
 
+  <span className="wa-text">
+    <strong>Satış Danışmanı Online</strong>
+    <small>WhatsApp ile Sor</small>
+  </span>
+</a>
       <section className="hero">
         <div className="hero-media">
   <video
