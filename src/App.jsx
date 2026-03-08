@@ -1,5 +1,5 @@
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 
 const SITE = {
   projectName: "Natura Alacaatlı",
