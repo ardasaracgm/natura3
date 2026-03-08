@@ -213,9 +213,6 @@ ${form.message}
         <div className="container hero-shell">
           <div className="topbar">
             <div className="brand-chip">{SITE.projectName}</div>
-            <a className="top-link" href={whatsappHref} target="_blank" rel="noreferrer">
-              WhatsApp Bilgi Al
-            </a>
           </div>
 
           <div className="hero-content">
