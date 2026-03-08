@@ -128,7 +128,46 @@ p{color:var(--muted);line-height:1.8}
 .footer-shell strong{font-size:22px}
 .footer-shell span{color:rgba(255,255,255,.72);max-width:520px;line-height:1.7}
 .footer-contact{font-size:14px}
-.floating-wa{position:fixed;right:20px;bottom:20px;z-index:1000;background:#10b981;color:#fff;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 14px 30px rgba(16,185,129,.28)}
+.floating-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:1000;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:12px 16px;
+
+  border-radius:999px;
+
+  background:#25D366;
+  color:#fff;
+
+  font-weight:600;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.wa-icon{
+  font-size:20px;
+}
+
+.wa-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.wa-text strong{
+  font-size:13px;
+}
+
+.wa-text small{
+  font-size:12px;
+  opacity:.9;
+}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.70);display:flex;align-items:center;justify-content:center;padding:18px;z-index:1200}
 .premium-modal{width:min(1080px,100%);background:#fff;border-radius:32px;padding:24px}
 .modal-top{display:flex;justify-content:space-between;align-items:start;gap:20px}
